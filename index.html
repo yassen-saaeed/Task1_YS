@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Text Color Range</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="colorText">Text Color Range.</h1>
+
+        <form id="colorForm">
+            <label for="redRange">Red</label>
+            <input type="range" id="redRange" name="red" min="0" max="255" value="0" />
+
+            <label for="greenRange">Green</label>
+            <input type="range" id="greenRange" name="green" min="0" max="255" value="0" />
+
+            <label for="blueRange">Blue</label>
+            <input type="range" id="blueRange" name="blue" min="0" max="255" value="0" />
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="video-container">
+        <video id="videoPlayer" width="640" height="360">
+            <source src="Cristiano Ronaldo's Free Kick Goal.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="controls">
+            <button id="playButton" class="fas fa-play"></button>
+            <button id="stopButton" class="fas fa-pause"></button>
+            <button id="rewindButton" class="fas fa-backward"></button>
+            <button id="forwardButton" class="fas fa-forward"></button>
+            <input type="range" id="seekBar" class="seek-bar" value="0" />
+            <button id="muteButton"><i id="muteIcon" class="fas fa-volume-up"></i></button>
+            <label for="speedSelect">Speed:</label>
+            <select id="speedSelect">
+                <option value="0.5">0.5x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+            </select>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

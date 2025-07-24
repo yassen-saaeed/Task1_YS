@@ -1,0 +1,39 @@
+  body {
+      font-family: Poppins;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 1rem;
+      background: white;
+      color: black;
+  }
+
+  label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 600;
+      user-select: none;
+  }
+
+  input[type="range"] {
+      width: 95%;
+  }
+
+  #colorText {
+      font-weight: bold;
+      margin-top: 20px;
+      user-select: none;
+  }
+
+  .video-container {
+      text-align: center;
+      margin-top: 20px;
+      background-color: rgba(10, 10, 10, 0.829);
+      border-radius: 9%;
+
+  }
+  .controls {
+      margin-top: 10px;
+  }
